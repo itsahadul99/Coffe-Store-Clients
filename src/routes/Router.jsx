@@ -1,9 +1,9 @@
 import { createBrowserRouter } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
-import AddCoffe from "../pages/AddCoffe";
-import UpdateCoffe from "../pages/UpdateCoffe";
+import UpdateCoffee from "../pages/UpdateCoffee";
 import ErrorPage from "../pages/ErrorPage";
+import AddCoffee from "../pages/AddCoffee";
 
 const router = createBrowserRouter([
     {
@@ -17,11 +17,11 @@ const router = createBrowserRouter([
             },
             {
                 path: '/addCoffe',
-                element: <AddCoffe />
+                element: <AddCoffee />
             },
             {
                 path:'/updateCoffe',
-                element: <UpdateCoffe />
+                element: <UpdateCoffee />
             }
         ]
     }
