@@ -59,7 +59,7 @@ const PopularProducts = ({ coffees, setCoffees }) => {
                                         <p className="text-[#1B1A1A] font-semibold text-sm lg:text-lg">Taste: <span className="text-[#5C5B5B] text-sm font-normal">{coffee.taste}</span></p>
                                     </div>
                                     <div className='flex flex-row md:flex-col gap-3'>
-                                        <Link to="/detailsProducts"><button className='p-2 bg-[#D2B48C] text-white rounded-md'><FaEye /></button></Link>
+                                        <Link to={`/detailsProducts/${coffee._id}`}><button className='p-2 bg-[#D2B48C] text-white rounded-md'><FaEye /></button></Link>
                                         <Link to="/updateCoffee"><button className='p-2 bg-[#3C393B] text-white rounded-md'><FaPen /></button></Link>
                                         <button onClick={() => handleDelete(coffee._id)} className='p-2 bg-[#EA4744] text-white rounded-md'><MdDeleteOutline /></button>
                                     </div>

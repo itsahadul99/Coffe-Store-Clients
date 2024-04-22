@@ -8,7 +8,7 @@ import cup7 from '../assets/images/cups/Rectangle 15.png';
 import cup8 from '../assets/images/cups/Rectangle 16.png';
 const FollowUs = () => {
     return (
-        <div className="bg-white">
+        <div className="bg-white py-5 lg:py-10">
             <div className='max-w-7xl mx-auto'>
                 <div className="text-center py-8 lg:py-16">
                     <h4 className="text-[#1B1A1A] text-xl my-3">Follow Us Now</h4>

@@ -11,7 +11,7 @@ import { useState } from "react";
 const Home = () => {
     const loadedCoffees = useLoaderData()
     const [coffees, setCoffees] = useState(loadedCoffees);
-    console.log(loadedCoffees);
+    // console.log(loadedCoffees);
     return (
         <div>
             <div className="hero min-h-[calc(100vh-280px)]" style={{ backgroundImage: `url(${bannderBg})` }}>
