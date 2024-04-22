@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { useLoaderData } from "react-router-dom";
 import bannderBg from '../assets/images/more/3.png';
 import cup from '../assets/images/icons/1.png';
@@ -6,8 +7,10 @@ import pure from '../assets/images/icons/3.png';
 import rosting from '../assets/images/icons/4.png';
 import FollowUs from "../components/FollowUs";
 import PopularProducts from "../components/PopularProducts";
+import { useState } from "react";
 const Home = () => {
     const loadedCoffees = useLoaderData()
+    const [coffees, setCoffees] = useState(loadedCoffees);
     console.log(loadedCoffees);
     return (
         <div>
@@ -49,7 +52,7 @@ const Home = () => {
                 </div>
                 </div>
             </div>
-            <PopularProducts loadedCoffees={loadedCoffees} />
+            <PopularProducts coffees={coffees} setCoffees={setCoffees} />
             <FollowUs />
         </div>
     );
