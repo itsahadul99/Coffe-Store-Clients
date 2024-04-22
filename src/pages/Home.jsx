@@ -5,9 +5,10 @@ import quality from '../assets/images/icons/2.png';
 import pure from '../assets/images/icons/3.png';
 import rosting from '../assets/images/icons/4.png';
 import FollowUs from "../components/FollowUs";
+import PopularProducts from "../components/PopularProducts";
 const Home = () => {
-    const coffees = useLoaderData()
-    // console.log(coffees);
+    const loadedCoffees = useLoaderData()
+    console.log(loadedCoffees);
     return (
         <div>
             <div className="hero min-h-[calc(100vh-280px)]" style={{ backgroundImage: `url(${bannderBg})` }}>
@@ -48,6 +49,7 @@ const Home = () => {
                 </div>
                 </div>
             </div>
+            <PopularProducts loadedCoffees={loadedCoffees} />
             <FollowUs />
         </div>
     );
