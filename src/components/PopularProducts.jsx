@@ -60,7 +60,7 @@ const PopularProducts = ({ coffees, setCoffees }) => {
                                     </div>
                                     <div className='flex flex-row md:flex-col gap-3'>
                                         <Link to={`/detailsProducts/${coffee._id}`}><button className='p-2 bg-[#D2B48C] text-white rounded-md'><FaEye /></button></Link>
-                                        <Link to="/updateCoffee"><button className='p-2 bg-[#3C393B] text-white rounded-md'><FaPen /></button></Link>
+                                        <Link to={`/updateCoffee/${coffee._id}`}><button className='p-2 bg-[#3C393B] text-white rounded-md'><FaPen /></button></Link>
                                         <button onClick={() => handleDelete(coffee._id)} className='p-2 bg-[#EA4744] text-white rounded-md'><MdDeleteOutline /></button>
                                     </div>
                                 </div>
